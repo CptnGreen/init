@@ -1,0 +1,10 @@
+# 7. Figure out the PID of the SSHD service.
+
+# Option 1:
+pgrep sshd
+
+# Option 2 (additional info):
+# ps -fp $(pgrep sshd)
+
+# Option 3 (using cat):
+# cat /var/run/sshd.pid

@@ -1,0 +1,4 @@
+# 12. Find the IP that was assigned to you by dhcp server
+
+# On Windows:
+ipconfig /all | findstr /C:"DHCP Server"

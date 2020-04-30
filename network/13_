@@ -1,0 +1,10 @@
+# 13. Thanks to the previous question and the reverse DNS find the name of your host [OUTPUT]
+
+# On Linux, option 1:
+# hostname
+
+# On Linux, option 2:
+# cat /proc/sys/kernel/hostname
+
+# On Windows:
+# ipconfig /all | findstr /C:"Host Name"

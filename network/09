@@ -1,0 +1,3 @@
+# 9. Find the external IP of 42.fr [OUTPUT]
+
+dig 42.fr | awk ' BEGIN { RS="\n\n" } /ANSWER SECTION/{ print } ' | sed -n '2,$ p' | awk ' { print $5 } '

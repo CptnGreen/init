@@ -1,0 +1,7 @@
+# 14. What file contains the local DNS entries? [DEDUCTION]
+
+# On Unix-based systems:
+# /etc/hosts
+
+# On Windows:
+# C:\Windows\system32\drivers\etc\hosts
