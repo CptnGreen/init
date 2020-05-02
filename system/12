@@ -1,0 +1,8 @@
+# 12. Figure out the exact size of each folder of /var in a humanly understandable way
+# followed by the path of it. [COMMAND]
+
+# Using -s (summarize) flag:
+sudo du -hs /var/*
+
+# Using -d (depth) flag:
+# sudo du -h -d0 /var/*
