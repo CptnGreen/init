@@ -1,0 +1,9 @@
+# 2. Identify and display the Ethernet interface characteristics:
+# (a) Identify broadcast address
+# (b) Identify all IP adresses which are part of the same subnet
+ 
+# Show only IP addresses
+sudo arp-scan --interface=enp0s3 --localnet | sed '1,2 d; $ d; /^\s*$/ d' | sed '$ d' | awk ' { print $1 } '
+
+# No interface specified
+# sudo arp-scan --localnet

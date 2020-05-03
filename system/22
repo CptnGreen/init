@@ -1,0 +1,6 @@
+# 22. Find the command that add a new local user [COMMAND]
+
+sudo useradd username
+
+# Create also home directory for user:
+# sudo useradd -m username

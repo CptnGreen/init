@@ -1,0 +1,7 @@
+# 8. Find the provider of slash16.org [DEDUCTION]
+
+# Find ip using dig like so:
+# dig slash16.org
+#
+# Then search for provider name using whois command:
+# whois 54.192.99.66 | grep Organization

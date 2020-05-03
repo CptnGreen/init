@@ -1,2 +1,5 @@
 # 11. Use the output of the previous command to find the name and IP address of the
 # device that makes the link between you (local network) and the outside world [DEDUCTION]
+
+# Just find first ip which is not in non routable ip range 
+# (which is 10.0.0.0/8, 172.16.0.0/12 or 192.168.0.0/16)

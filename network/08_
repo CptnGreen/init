@@ -1,4 +1,0 @@
-# 8. Find the provider of slash16.org [DEDUCTION]
-
-dig slash16.org
-whois <IP>

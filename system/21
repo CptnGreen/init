@@ -1,0 +1,6 @@
+# 21. List all real users on the VM [COMMAND]
+
+getent passwd | awk -F":" ' $3>999 && $3<30000 { print $1 } '
+
+# Version without use of getent utility:
+# cat /etc/passwd | awk -F":" ' $3>999 && $3<30000 { print $1 } '

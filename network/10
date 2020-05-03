@@ -1,5 +1,6 @@
 # 10. Identify the network devices between your computer and the slash16.org domain
 
+# For some reason doesn't work from VM:
 traceroute slash16.org
 
 # On Windows:
