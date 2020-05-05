@@ -2,4 +2,4 @@
 # (a) Identify broadcast address
 # (b) Identify all IP adresses which are part of the same subnet
 
-sudo ifconfig en0 | awk '/broadcast/{ print $6 }'
+Ifconfig en0 | awk '/broadcast/{ print $6 }'

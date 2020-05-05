@@ -1,3 +1,7 @@
 # 5. Identify the IP address of the DNS that responds to the following url: slash16.org
 
-dig slash16.org | grep SERVER | awk ' BEGIN {FS="[()]"} { print $2 }'
+# On MacOS:
+nslookup slash16.org | awk ' /Server/{ print $2 } '
+
+# On Linux:
+# dig slash16.org | grep SERVER | awk ' BEGIN {FS="[()]"} { print $2 }'
