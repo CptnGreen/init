@@ -1,9 +1,13 @@
-# 1. In what file can you find the installed version of your Debian? [OUTPUT]
+# 1. In what file can you find the installed version of your Debian? [DEDUCTION]
 
-# Version number:
-cat /etc/debian_version
+# File name:
+echo "/etc/debian_version"
 
-# More information:
+# Get actual version number:
+# cat /etc/debian_version
+
+# More commands for information:
+#
 # cat /etc/issue
 # cat /etc/os-release
 # hostnamectl

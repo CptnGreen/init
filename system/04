@@ -1,3 +1,3 @@
 # 4. What command gives you the time since your system was last booted? [COMMAND]
 
-uptime | awk -F", " ' { print $2 } '
+uptime | awk -F",[ ]+" ' { print $2 } '

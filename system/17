@@ -1,5 +1,6 @@
 # 17. Find the command that allows you to connect via ssh on the VM. (In parallel with
 # the graphic session) [COMMAND]
 
-# Port forwarding must be set up in the VM's settings
+# This command must be executed from the host machine
+# (port forwarding must be set up in the VM's settings):
 ssh -X -p 2222 ak@127.0.0.1

@@ -1,3 +1,4 @@
-# 3. What file has to be modified to make it permanent?
+# 3. What file has to be modified to make it permanent? [DEDUCTION]
 
-/etc/hostname
+# Echo file name:
+echo "/etc/hostname"

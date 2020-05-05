@@ -1,4 +1,4 @@
-# 10. Name the command that lists the partition tables of drives?
+# 10. Name the command that lists the partition tables of drives? [COMMAND]
 
-# For some reason doesn't work on WSL:
-fdisk -l
+# For some reason doesn't work on WSL
+sudo fdisk -l

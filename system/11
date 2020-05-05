@@ -1,4 +1,4 @@
 # 11. Name the command that displays the available space left and used on the system
 # in an humanly understandable way [COMMAND]
 
-df -h --total
+df -h --total | awk ' /total/{ printf "Left: %s, Used: %s\n", $4, $3 } '

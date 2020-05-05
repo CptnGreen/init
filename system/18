@@ -1,3 +1,4 @@
-# 18. Find the command that kills ssh service
+# 18. Find the command that kills ssh service [COMMAND]
 
+# Funny thing - even after this command ssh is still working (at least with VM):
 sudo service ssh stop

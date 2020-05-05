@@ -1,7 +1,7 @@
-# 5. Name the command that determines the state of the SSH service.
+# 5. Name the command that determines the state of the SSH service [COMMAND]
 
-# On Ubuntu/Debian:
-service ssh status
+# On Debian/Ubuntu:
+sudo service ssh status
 
 # On Arch:
 # systemctl status sshd

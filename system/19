@@ -1,3 +1,7 @@
 # 19. List all services which are started at boot time and name this kind of services [COMMAND]
 
-systemctl list-unit-files --type=service --state=enabled
+# Answer:
+echo "ENABLED:" && systemctl list-unit-files --type=service --state=enabled | sed '1 d ' | awk ' { print $1 } ' | sed '$ d' | sed '$ d'
+
+# Actual command without formatting:
+# systemctl list-unit-files --type=service --state=enabled

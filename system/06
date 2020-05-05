@@ -1,7 +1,7 @@
-# 6. Name the command that reboots the SSH service.
+# 6. Name the command that reboots the SSH service [COMMAND]
 
-# On Ubuntu/Debian:
-service ssh restart
+# On Debian/Ubuntu:
+sudo service ssh restart
 
 # On Arch:
 # systemctl restart sshd
