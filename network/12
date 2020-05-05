@@ -1,3 +1,4 @@
-# 12. Find the IP that was assigned to you by dhcp server
+# 12. Find the IP that was assigned to you by dhcp server [COMMAND]
 
+# Not sure how to tell if my ip address is dynamic or static
 ifconfig | awk ' /broadcast/{ print $2 } '

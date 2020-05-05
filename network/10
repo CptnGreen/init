@@ -1,7 +1,10 @@
-# 10. Identify the network devices between your computer and the slash16.org domain
+# 10. Identify the network devices between your computer and the slash16.org domain [COMMAND]
 
-# For some reason doesn't work from VM:
-traceroute slash16.org
+# Using mtr (can be installed via brew):
+sudo /usr/local/sbin/mtr -r -c 5 slash16.org
+
+# Using tracerout (for some reason doesn't work from VM):
+# traceroute slash16.org
 
 # On Windows:
 # tracert slash16.org

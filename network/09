@@ -1,4 +1,4 @@
 # 9. Find the external IP of 42.fr [OUTPUT]
 
-# From external network:
+# Not sure whether this works from internal network or not:
 dig 42.fr | awk ' BEGIN { RS='\n\n' } /ANSWER SECTION/{ print } ' | sed '1 d' | awk ' { print $5 } '

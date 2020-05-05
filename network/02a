@@ -1,5 +1,6 @@
 # 2. Identify and display the Ethernet interface characteristics:
-# (a) Identify broadcast address
-# (b) Identify all IP adresses which are part of the same subnet
+# (a) Identify broadcast address [COMMAND]
+# (b) Identify all IP adresses which are part of the same subnet [COMMAND]
 
-Ifconfig en0 | awk '/broadcast/{ print $6 }'
+# interface name may be different
+ifconfig en0 | awk '/broadcast/{ print $6 }'

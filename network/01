@@ -1,12 +1,12 @@
 # 1. Get the list of the network interfaces of the machine without displaying any detail
-# for these interfaces. Only the list of names
+# for these interfaces. Only the list of names [COMMAND]
 
 # On MacOS:
 ifconfig -l
 
-# On Debian using cut:
+# On Linux (cut version):
 # ip -br link show | cut -d " " -f 1
 
-# On Debian using awk:
+# On Linux (awk version):
 # ip -br link show | awk ' { print $1 } '
 
