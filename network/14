@@ -1,7 +1,7 @@
 # 14. What file contains the local DNS entries? [DEDUCTION]
 
-# On Unix-based systems:
-# /etc/hosts
+# Echo file name (Unix-based systems):
+echo "/etc/hosts"
 
-# On Windows:
+# On Windows file is:
 # C:\Windows\system32\drivers\etc\hosts

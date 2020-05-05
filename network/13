@@ -1,0 +1,15 @@
+# 13. Thanks to the previous question and the reverse DNS find the name of your host [OUTPUT]
+
+# Not sure what they really want from us but maybe this:
+host $(sudo ifconfig | awk ' /broadcast/{ print $2 } ') | awk ' { print $5 } '
+
+# Some options to find machine's self-assigned name:
+#
+# On Linux:
+#
+# hostname
+# cat /proc/sys/kernel/hostname
+#
+# On Windows:
+#
+# ipconfig /all | findstr /C:"Host Name"
