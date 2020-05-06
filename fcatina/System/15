@@ -1,3 +1,0 @@
-sudo pkill tail
-#
-#examle: sudo tail -f /var/log/syslog & pkill tail

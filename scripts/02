@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# 2. Write a script which delete an ACTIVE user on the VM.
+
+# If no arguments are given this script deletes an active user
+# although you can specify user you want to delete as the first argument.
+
+if [[ $# -eq 1 ]]; then
+	user="$1"
+elif [[ $# -eq 0 ]]; then
+	user="$(whoami)"
+else
+	echo "Need zero or one argument" >&2
+	exit 1
+fi
+
+for process in $(pgrep -u $user); do 
+	sudo kill "$process"
+done
+
+if pgrep -u $user >&2; then
+	echo "Some $user's processes couldn't be killed"
+fi
+
+if sudo userdel $user; then
+	echo "User $user was killed"
+else
+	echo "Something went wrong" >&2
+	exit 1
+fi
+
+exit 0

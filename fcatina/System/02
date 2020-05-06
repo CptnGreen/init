@@ -1,7 +1,0 @@
-#=========================================
-#For doing this in VM we need be admin
-#-> do su (enter as admin) login
-#-> enter password
-#-> enter command
-#=========================================
-hostname name

@@ -1,0 +1,4 @@
+# 23. Explain how connect yourself as new user (with graphic session and ssh session) [DEDUCTION]
+
+# Example (with X11- and port-forwarding) of connecting host to guest VM:
+# ssh -X ak@127.0.0.1 -p 2225
